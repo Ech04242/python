@@ -1,6 +1,6 @@
 # Testeur
-*/tester.py
-
+*/testeur.py
+.gitignore
 .idea/
 .vscode/
 obj/
