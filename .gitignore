@@ -1,10 +1,11 @@
 # Testeur
-*/testeur.py
+*/*/testeur.py
+*/*/__pycache__
 .gitignore
 .idea/
 .vscode/
 obj/
-.sw*
+*.sw*
 
 # Prerequisites
 *.d
