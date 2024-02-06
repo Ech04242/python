@@ -11,4 +11,4 @@ def NULL_not_found(obj):
         print(f"Empty: {obj}{type(obj)}")
     else:
         print("Type not Found")
-    return 1;
+    return 1
