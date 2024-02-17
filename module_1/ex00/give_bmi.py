@@ -1,5 +1,5 @@
 def give_bmi(height: list[int | float], weight: list[int | float])\
-            -> list[int | float]:    
+            -> list[int | float]:
     if (len(height) != len(weight)):
         print("list len doesn't match")
         return None
