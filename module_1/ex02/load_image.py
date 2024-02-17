@@ -22,4 +22,4 @@ def ft_load(path: str) -> list:
         return img
     except Exception as error:
         print("Error :", error)
-        return []
+        return None
