@@ -1,11 +1,20 @@
 from load_image import ft_load
-import numpy as np
+import matplotlib.pyplot as plt
+import sys
+
 
 if __name__ == "__main__":
-
-    img = ft_load("../assets/animal.jpeg")
-    if img is None:
-        exit()
-    print(img)
-    new_img = np.array([img[0], img[0]])
-    print("New shape after slicing: ", np.array(new_img).shape)
+    try:
+        if len(sys.argv) < 2:
+            raise ValueError("Bad numbers of argument, 1 is required")
+        img = ft_load(sys.argv[1])
+        if img is None:
+            exit()
+        print(img)
+        img = img[100:500, 450:850, 0:1]
+        print("New shape after slicing: ", img.shape)
+        print(img)
+        plt.imshow(img, cmap='gray')
+        plt.show()
+    except Exception as error:
+        print("error: ", error)
