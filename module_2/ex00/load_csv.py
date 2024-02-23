@@ -2,6 +2,17 @@ import pandas as pd
 
 
 def load(path: str):
+    """ load an CSV file and return data
+
+    Args:
+        path (str): link to CSV
+
+    Raises:
+        TypeError / NameError : bad file link
+
+    Returns:
+        _type_: data of csv , None on error
+    """
     try:
         if not isinstance(path, str):
             raise TypeError("path is not str type !")
