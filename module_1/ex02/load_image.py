@@ -23,4 +23,3 @@ def ft_load(path: str) -> list:
     except Exception as error:
         print("Error :", error)
         return None
-
