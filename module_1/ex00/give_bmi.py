@@ -41,7 +41,7 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
         for value in bmi:
             if not isinstance(value, (int, float)):
                 raise TypeError("value other of int / float detect")
-        return [i < limit for i in bmi]
+        return [i > limit for i in bmi]
     except Exception as error:
         print("error: ", error)
         return []
